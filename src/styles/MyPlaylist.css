@@ -1,0 +1,71 @@
+.myPlaylist {
+    text-align: center;
+    padding: 50px;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .myPlaylist__title {
+    font-size: 2.5rem;
+    color: #1db954;
+    margin-bottom: 30px;
+  }
+  
+  .myPlaylist__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .projectCard {
+    background-color: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .projectCard__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .projectCard__title {
+    font-size: 1.5rem;
+    color: white;
+    margin: 15px 0;
+  }
+  
+  .projectCard__description {
+    font-size: 1rem;
+    color: #d1d1d1;
+    padding: 0 15px;
+  }
+  
+  .projectCard__button {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #1db954;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .projectCard__button:hover {
+    background-color: #14833b;
+  }
+  
+  .projectCard__noLink {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  

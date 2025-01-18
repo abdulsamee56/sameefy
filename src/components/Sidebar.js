@@ -17,7 +17,7 @@ function Sidebar({ setCurrentSection }) {
         </button>
         <button
           className="sidebar__button"
-          onClick={() => setCurrentSection("projects")}
+          onClick={() => setCurrentSection("myPlaylist")}
         >
           My Playlist (Projects and portfolio work)
         </button>
