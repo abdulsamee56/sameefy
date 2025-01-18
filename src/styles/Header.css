@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .header__left {
+    flex: 1;
+  }
+  
+  .header__logo {
+    color: #1db954;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .header__center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header__searchInput {
+    background-color: #121212;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    outline: none;
+    width: 300px;
+  }
+  
+  .header__right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .header__login,
+  .header__signup {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .header__signup {
+    background-color: #1db954;
+    border: none;
+  }
+  
