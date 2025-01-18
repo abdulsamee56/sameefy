@@ -1,9 +1,55 @@
-.mainContent h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.mainContent {
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #121212, #181818); /* Spotify-like dark gradient */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    max-width: 800px;
   }
   
-  .mainContent p {
-    font-size: 16px;
+  .mainContent__home {
+    margin-top: 20px;
+  }
+  
+  .mainContent__title {
+    font-size: 3rem;
+    color: #1db954; /* Spotify green */
+    margin-bottom: 20px;
+  }
+  
+  .mainContent__intro {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #d1d1d1; /* Light gray for text */
+  }
+  
+  .mainContent__button {
+    background-color: #1db954; /* Spotify green */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .mainContent__button:hover {
+    background-color: #14833b; /* Darker green */
+    transform: scale(1.05);
+  }
+  
+  .mainContent__buttonLink {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .mainContent__buttonLink:hover {
+    color: white;
   }
   

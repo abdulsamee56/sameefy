@@ -55,4 +55,36 @@
     background-color: #1db954;
     border: none;
   }
+  .header__button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 5px;
+  }
+  
+  /* Mute Button */
+  .header__mute {
+    background-color: #1db954; /* Spotify green */
+    color: white;
+  }
+  
+  .header__mute:hover {
+    background-color: #14833b; /* Darker green for hover */
+    color: #f5f5f5;
+  }
+  
+  /* Change Song Button */
+  .header__changeSong {
+    background-color: #535353; /* Dark gray */
+    color: white;
+  }
+  
+  .header__changeSong:hover {
+    background-color: #2c2c2c; /* Even darker gray for hover */
+    color: #f5f5f5;
+  }
   

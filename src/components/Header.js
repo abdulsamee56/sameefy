@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Header.css";
 
-function Header() {
+function Header({ audioRef, songs }) {
+  const [isMuted, setIsMuted] = useState(false);
+
+  const toggleMute = () => {
+    if (audioRef?.current) {
+      audioRef.current.muted = !audioRef.current.muted;
+      setIsMuted(!isMuted);
+    }
+  };
+
+  const changeSong = () => {
+    if (audioRef?.current) {
+      const randomIndex = Math.floor(Math.random() * songs.length);
+      audioRef.current.src = songs[randomIndex];
+      audioRef.current.play().catch((error) => {
+        console.error("Failed to play new song:", error);
+      });
+    }
+  };
+
   return (
     <div className="header">
       <div className="header__left">
@@ -15,8 +34,12 @@ function Header() {
         />
       </div>
       <div className="header__right">
-        <button className="header__login">Log in</button>
-        <button className="header__signup">Sign up</button>
+        <button className="header__button header__mute" onClick={toggleMute}>
+          {isMuted ? "🔈 Unmute" : "🔇 Mute"}
+        </button>
+        <button className="header__button header__changeSong" onClick={changeSong}>
+          🎵 Change Song
+        </button>
       </div>
     </div>
   );
