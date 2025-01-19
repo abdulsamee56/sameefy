@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/MainContent.css";
 import MyPlaylist from "./MyPlaylist";
-
+import TopHits from "./TopHits";
+import NowPlaying from "./NowPlaying";
+import DiscoverMore from "./DiscoverMore";
 function MainContent({ currentSection }) {
   console.log("Current section:", currentSection); // Debugging
   return (
@@ -31,6 +33,9 @@ function MainContent({ currentSection }) {
       
       {/* Render the My Playlist section */}
       {currentSection === "myPlaylist" && <MyPlaylist />}
+      {currentSection === "skills" && <TopHits />}
+      {currentSection === "experience" && <NowPlaying />}
+      {currentSection === "contact" && <DiscoverMore />}
     </div>
   );
 }
