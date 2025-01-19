@@ -1,55 +1,146 @@
 .mainContent {
-    padding: 50px;
-    color: white;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #121212, #181818); /* Spotify-like dark gradient */
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 50px auto;
-    max-width: 800px;
-  }
-  
-  .mainContent__home {
-    margin-top: 20px;
-  }
-  
-  .mainContent__title {
-    font-size: 3rem;
-    color: #1db954; /* Spotify green */
-    margin-bottom: 20px;
-  }
-  
-  .mainContent__intro {
-    font-size: 1.2rem;
-    margin: 15px 0;
-    line-height: 1.6;
-    color: #d1d1d1; /* Light gray for text */
-  }
-  
-  .mainContent__button {
-    background-color: #1db954; /* Spotify green */
-    color: white;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-decoration: none;
-  }
-  
-  .mainContent__button:hover {
-    background-color: #14833b; /* Darker green */
-    transform: scale(1.05);
-  }
-  
-  .mainContent__buttonLink {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .mainContent__buttonLink:hover {
-    color: white;
-  }
-  
+  padding: 50px;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #121212, #181818); /* Spotify-like dark gradient */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 50px auto;
+  max-width: 1200px; /* Increased width for better layout */
+}
+
+/* Home section styling */
+.mainContent__home {
+  margin-top: 20px;
+}
+
+.mainContent__title {
+  font-size: 3rem;
+  color: #1db954; /* Spotify green */
+  margin-bottom: 20px;
+}
+
+.mainContent__intro {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #ffffff; /* White text for better contrast */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Alternating vibrant gradient backgrounds */
+.mainContent__intro:nth-child(1) {
+  background: linear-gradient(135deg, #8e44ad, #3498db); /* Purple to blue */
+}
+
+.mainContent__intro:nth-child(2) {
+  background: linear-gradient(135deg, #e74c3c, #f39c12); /* Red to orange */
+}
+
+.mainContent__intro:nth-child(3) {
+  background: linear-gradient(135deg, #27ae60, #16a085); /* Green to teal */
+}
+
+.mainContent__intro:nth-child(4) {
+  background: linear-gradient(135deg, #f1c40f, #e67e22); /* Yellow to orange */
+}
+.mainContent__intro:nth-child(5) {
+  background: linear-gradient(135deg, #8e44ad, #3498db); /* Purple to blue */
+}
+.mainContent__intro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+/* Button styling */
+.mainContent__button {
+  background-color: #1db954; /* Spotify green */
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.mainContent__button:hover {
+  background-color: #14833b; /* Darker green */
+  transform: scale(1.05);
+}
+
+.mainContent__buttonLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainContent__buttonLink:hover {
+  color: white;
+}
+
+/* Project card grid layout */
+.mainContent__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.mainContent__card {
+  background: linear-gradient(135deg, #8e44ad, #3498db); /* Gradient background */
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainContent__card:nth-child(2) {
+  background: linear-gradient(135deg, #e74c3c, #f39c12); /* Red to orange */
+}
+
+.mainContent__card:nth-child(3) {
+  background: linear-gradient(135deg, #27ae60, #16a085); /* Green to teal */
+}
+
+.mainContent__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.mainContent__card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.mainContent__card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.mainContent__card button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mainContent__card button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}

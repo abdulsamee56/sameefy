@@ -5,55 +5,71 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 20px;
-  }
-  
-  .topHits__title {
+}
+
+.topHits__title {
     font-size: 2.5rem;
     color: #1db954;
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  .topHits__intro {
+}
+
+.topHits__intro {
     text-align: center;
     font-size: 1.2rem;
     color: #b3b3b3;
     margin-bottom: 20px;
-  }
-  
-  .topHits__list {
+}
+
+.topHits__list {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .topHits__item {
+}
+
+.topHits__item {
     display: flex;
     align-items: center;
-    background-color: #181818;
     border-radius: 6px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .topHits__rank {
+    transition: transform 0.3s ease;
+}
+
+/* Alternating vibrant colors for items */
+.topHits__item:nth-child(odd) {
+    background: linear-gradient(135deg, #8e44ad, #3498db); /* Purple to blue */
+}
+
+.topHits__item:nth-child(even) {
+    background: linear-gradient(135deg, #e74c3c, #f39c12); /* Red to orange */
+}
+
+/* Hover effect for items */
+.topHits__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.topHits__rank {
     font-size: 2rem;
     font-weight: bold;
-    color: #1db954;
+    color: #ffffff;
     margin-right: 20px;
-  }
-  
-  .topHits__content {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.topHits__content {
     flex: 1;
-  }
-  
-  .topHits__skill {
+}
+
+.topHits__skill {
     font-size: 1.5rem;
     margin-bottom: 5px;
-  }
-  
-  .topHits__description {
+    color: #ffffff; /* White for better contrast */
+}
+
+.topHits__description {
     font-size: 1rem;
-    color: #b3b3b3;
-  }
-  
+    color: #ffffff; /* White for better contrast */
+}
