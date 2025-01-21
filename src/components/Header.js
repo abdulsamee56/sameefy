@@ -24,15 +24,22 @@ function Header({ audioRef, songs }) {
   return (
     <div className="header">
       <div className="header__left">
-        <h1 className="header__logo">SameeFy</h1>
-      </div>
-      <div className="header__center">
-        <input
-          type="text"
-          placeholder="What do you want to play?"
-          className="header__searchInput"
+        {/* Use the relative path for the logo in the public folder */}
+        <img
+          src={`${process.env.PUBLIC_URL}/sameelogo.png`}
+          alt="SameeFy Logo"
+          className="header__logoImage"
         />
       </div>
+      {/* 
+<div className="header__center">
+  <input
+    type="text"
+    placeholder="What do you want to play?"
+    className="header__searchInput"
+  />
+</div>
+*/}
       <div className="header__right">
         <button className="header__button header__mute" onClick={toggleMute}>
           {isMuted ? "🔈 Unmute" : "🔇 Mute"}

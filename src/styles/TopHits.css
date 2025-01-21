@@ -1,75 +1,74 @@
 .topHits {
-    padding: 20px;
+    padding: 30px;
     background-color: #121212;
     color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 20px;
-}
-
-.topHits__title {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    max-width: 900px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .topHits__title {
     font-size: 2.5rem;
     color: #1db954;
     text-align: center;
-    margin-bottom: 10px;
-}
-
-.topHits__intro {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1db954;
+    padding-bottom: 10px;
+  }
+  
+  .topHits__intro {
     text-align: center;
     font-size: 1.2rem;
     color: #b3b3b3;
-    margin-bottom: 20px;
-}
-
-.topHits__list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.topHits__item {
+    margin-bottom: 30px;
+  }
+  
+  .topHits__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .topHits__item {
     display: flex;
     align-items: center;
-    border-radius: 6px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-/* Alternating vibrant colors for items */
-.topHits__item:nth-child(odd) {
-    background: linear-gradient(135deg, #8e44ad, #3498db); /* Purple to blue */
-}
-
-.topHits__item:nth-child(even) {
-    background: linear-gradient(135deg, #e74c3c, #f39c12); /* Red to orange */
-}
-
-/* Hover effect for items */
-.topHits__item:hover {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: left;
+  }
+  
+  .topHits__item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.topHits__rank {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .darkCard {
+    background-color: #1e1e1e;
+  }
+  
+  .lightCard {
+    background-color: #282828;
+  }
+  
+  .topHits__icon {
+    font-size: 2.5rem;
+    color: #1db954;
     margin-right: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.topHits__content {
-    flex: 1;
-}
-
-.topHits__skill {
+  }
+  
+  .topHits__skill {
     font-size: 1.5rem;
     margin-bottom: 5px;
-    color: #ffffff; /* White for better contrast */
-}
-
-.topHits__description {
+    color: #ffffff;
+  }
+  
+  .topHits__description {
     font-size: 1rem;
-    color: #ffffff; /* White for better contrast */
-}
+    color: #b3b3b3;
+    line-height: 1.5;
+  }
+  
